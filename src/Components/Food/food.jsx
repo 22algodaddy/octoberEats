@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import {data} from "../../Data/data.js"
 import {useState} from "react"
 export default function Food(){
@@ -13,9 +14,9 @@ export default function Food(){
     const filterPrice = (price) => {
         Setfoods(
             data.filter((item) => {
-               if( item.price<=price) {
+               if( item.price<=price)
                    return (item);
-               }
+
             })
         )
     }
